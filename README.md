@@ -19,3 +19,10 @@ npm install
 ```bash
 npm start
 ```
+
+## Testing
+For testing, a 3rd party application line POSTman or Insomnia is needed. The file named `InsomniaTests.json` can be exported to either of these applications and then can be used for testing after API has been started.
+
+```bash
+npm start
+```
