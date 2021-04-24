@@ -7,7 +7,7 @@ app.use(Express.json())
 // data structure to hold input strings with counts
 var myStructure = {};
 
-// TODO POST request at /input
+// POST request at /input
 app.post("/input", (req,res) =>{
     
     for (const [_, value] of Object.entries(req.body)) {
@@ -20,7 +20,7 @@ app.post("/input", (req,res) =>{
 
 });
 
-// TODO GET request at /<query>
+// GET request at /<query>
 app.get("/query", (req,res) => {
     if (myStructure[req.query.key] == undefined)
         res.send("0");
@@ -35,7 +35,7 @@ app.get("/", (req,res) => {
 });
 
 
-// TODO Listen at 9000
+// Listen at 9000
 app.listen(port, ()=>{
     console.log("Server started on port " + port);
 })
